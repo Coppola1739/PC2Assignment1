@@ -1,0 +1,14 @@
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\bin\Debug\net8.0-windows\PC2A1ControlLibrary.deps.json
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\bin\Debug\net8.0-windows\PC2A1ControlLibrary.dll
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\bin\Debug\net8.0-windows\PC2A1ControlLibrary.pdb
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\PC2A1ControlLibrary.csproj.GenerateResource.cache
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\PC2A1ControlLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\PC2A1ControlLibrary.AssemblyInfoInputs.cache
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\PC2A1ControlLibrary.AssemblyInfo.cs
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\PC2A1ControlLibrary.csproj.CoreCompileInputs.cache
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\PC2A1ControlLibrary.sourcelink.json
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\PC2A1ControlLibrary.dll
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\refint\PC2A1ControlLibrary.dll
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\PC2A1ControlLibrary.pdb
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\ref\PC2A1ControlLibrary.dll
+C:\Users\gc00030\Desktop\workspace\PC2Assignment1\PC2A1ControlLibrary\PC2A1ControlLibrary\obj\Debug\net8.0-windows\PC2A1ControlLibrary.TaskAndPriorityUserControl.resources

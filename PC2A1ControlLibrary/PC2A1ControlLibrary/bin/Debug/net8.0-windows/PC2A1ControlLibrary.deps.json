@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PC2A1ControlLibrary/1.0.0": {
+        "runtime": {
+          "PC2A1ControlLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PC2A1ControlLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ClassPriorityTrackerForm/1.0.0": {
+        "dependencies": {
+          "PC2A1ControlLibrary": "1.0.0"
+        },
+        "runtime": {
+          "ClassPriorityTrackerForm.dll": {}
+        }
+      },
+      "PC2A1ControlLibrary/1.0.0": {
+        "runtime": {
+          "PC2A1ControlLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ClassPriorityTrackerForm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PC2A1ControlLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
