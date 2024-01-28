@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PC2A1ControlLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7fb644ebcc7f2495ba9337ab0a1a9a9521879b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PC2A1ControlLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PC2A1ControlLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
