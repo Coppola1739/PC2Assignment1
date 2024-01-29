@@ -1,4 +1,6 @@
-﻿namespace PC2A1ControlLibrary
+﻿using ClassPriorityTrackerForm.model;
+
+namespace PC2A1ControlLibrary
 {
     partial class TaskAndPriorityUserControl
     {
@@ -54,6 +56,7 @@
             // lowRadioButton
             // 
             lowRadioButton.AutoSize = true;
+            lowRadioButton.Checked = true;
             lowRadioButton.Location = new Point(6, 72);
             lowRadioButton.Name = "lowRadioButton";
             lowRadioButton.Size = new Size(47, 19);
@@ -61,6 +64,8 @@
             lowRadioButton.TabStop = true;
             lowRadioButton.Text = "Low";
             lowRadioButton.UseVisualStyleBackColor = true;
+            lowRadioButton.CheckedChanged += onRadioButtonChanged;
+            lowRadioButton.Tag = Priority.Low;
             // 
             // mediumRadioButton
             // 
@@ -69,9 +74,10 @@
             mediumRadioButton.Name = "mediumRadioButton";
             mediumRadioButton.Size = new Size(70, 19);
             mediumRadioButton.TabIndex = 3;
-            mediumRadioButton.TabStop = true;
             mediumRadioButton.Text = "Medium";
             mediumRadioButton.UseVisualStyleBackColor = true;
+            mediumRadioButton.CheckedChanged += onRadioButtonChanged;
+            mediumRadioButton.Tag = Priority.Medium;
             // 
             // highRadioButton
             // 
@@ -80,18 +86,18 @@
             highRadioButton.Name = "highRadioButton";
             highRadioButton.Size = new Size(51, 19);
             highRadioButton.TabIndex = 2;
-            highRadioButton.TabStop = true;
             highRadioButton.Text = "High";
             highRadioButton.UseVisualStyleBackColor = true;
+            highRadioButton.CheckedChanged += onRadioButtonChanged;
+            highRadioButton.Tag = Priority.High;
             // 
             // taskDataGridView
             // 
-            taskDataGridView.AllowUserToAddRows = false;
-            taskDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             taskDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             taskDataGridView.Columns.AddRange(new DataGridViewColumn[] { DoneColumn, TaskColumn });
             taskDataGridView.Location = new Point(122, 17);
             taskDataGridView.Name = "taskDataGridView";
+            taskDataGridView.RowHeadersVisible = false;
             taskDataGridView.Size = new Size(378, 309);
             taskDataGridView.TabIndex = 2;
             // 
@@ -99,14 +105,14 @@
             // 
             DoneColumn.HeaderText = "Done";
             DoneColumn.Name = "DoneColumn";
-            DoneColumn.ReadOnly = true;
+            DoneColumn.ReadOnly = false;
             // 
             // TaskColumn
             // 
             TaskColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             TaskColumn.HeaderText = "Task";
             TaskColumn.Name = "TaskColumn";
-            TaskColumn.ReadOnly = true;
+            TaskColumn.ReadOnly = false;
             // 
             // TaskAndPriorityUserControl
             // 
