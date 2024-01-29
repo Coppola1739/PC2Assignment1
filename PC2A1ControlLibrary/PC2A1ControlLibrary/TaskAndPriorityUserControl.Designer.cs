@@ -30,6 +30,7 @@ namespace PC2A1ControlLibrary
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             priorityGroupBox = new GroupBox();
             lowRadioButton = new RadioButton();
             mediumRadioButton = new RadioButton();
@@ -37,8 +38,12 @@ namespace PC2A1ControlLibrary
             taskDataGridView = new DataGridView();
             DoneColumn = new DataGridViewCheckBoxColumn();
             TaskColumn = new DataGridViewTextBoxColumn();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            checkAllToolStripMenuItem = new ToolStripMenuItem();
+            uncheckAllToolStripMenuItem = new ToolStripMenuItem();
             priorityGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)taskDataGridView).BeginInit();
+            contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // priorityGroupBox
@@ -62,10 +67,10 @@ namespace PC2A1ControlLibrary
             lowRadioButton.Size = new Size(47, 19);
             lowRadioButton.TabIndex = 4;
             lowRadioButton.TabStop = true;
+            lowRadioButton.Tag = Priority.Low;
             lowRadioButton.Text = "Low";
             lowRadioButton.UseVisualStyleBackColor = true;
             lowRadioButton.CheckedChanged += onRadioButtonChanged;
-            lowRadioButton.Tag = Priority.Low;
             // 
             // mediumRadioButton
             // 
@@ -74,10 +79,10 @@ namespace PC2A1ControlLibrary
             mediumRadioButton.Name = "mediumRadioButton";
             mediumRadioButton.Size = new Size(70, 19);
             mediumRadioButton.TabIndex = 3;
+            mediumRadioButton.Tag = Priority.Medium;
             mediumRadioButton.Text = "Medium";
             mediumRadioButton.UseVisualStyleBackColor = true;
             mediumRadioButton.CheckedChanged += onRadioButtonChanged;
-            mediumRadioButton.Tag = Priority.Medium;
             // 
             // highRadioButton
             // 
@@ -86,15 +91,16 @@ namespace PC2A1ControlLibrary
             highRadioButton.Name = "highRadioButton";
             highRadioButton.Size = new Size(51, 19);
             highRadioButton.TabIndex = 2;
+            highRadioButton.Tag = Priority.High;
             highRadioButton.Text = "High";
             highRadioButton.UseVisualStyleBackColor = true;
             highRadioButton.CheckedChanged += onRadioButtonChanged;
-            highRadioButton.Tag = Priority.High;
             // 
             // taskDataGridView
             // 
             taskDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             taskDataGridView.Columns.AddRange(new DataGridViewColumn[] { DoneColumn, TaskColumn });
+            taskDataGridView.ContextMenuStrip = contextMenuStrip1;
             taskDataGridView.Location = new Point(122, 17);
             taskDataGridView.Name = "taskDataGridView";
             taskDataGridView.RowHeadersVisible = false;
@@ -105,14 +111,32 @@ namespace PC2A1ControlLibrary
             // 
             DoneColumn.HeaderText = "Done";
             DoneColumn.Name = "DoneColumn";
-            DoneColumn.ReadOnly = false;
             // 
             // TaskColumn
             // 
             TaskColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             TaskColumn.HeaderText = "Task";
             TaskColumn.Name = "TaskColumn";
-            TaskColumn.ReadOnly = false;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { checkAllToolStripMenuItem, uncheckAllToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(138, 48);
+            // 
+            // checkAllToolStripMenuItem
+            // 
+            checkAllToolStripMenuItem.Name = "checkAllToolStripMenuItem";
+            checkAllToolStripMenuItem.Size = new Size(137, 22);
+            checkAllToolStripMenuItem.Text = "Check All";
+            checkAllToolStripMenuItem.Click += onContextMenuCheckAll;
+            // 
+            // uncheckAllToolStripMenuItem
+            // 
+            uncheckAllToolStripMenuItem.Name = "uncheckAllToolStripMenuItem";
+            uncheckAllToolStripMenuItem.Size = new Size(137, 22);
+            uncheckAllToolStripMenuItem.Text = "Uncheck All";
+            uncheckAllToolStripMenuItem.Click += onContextMenuUncheckAll;
             // 
             // TaskAndPriorityUserControl
             // 
@@ -125,6 +149,7 @@ namespace PC2A1ControlLibrary
             priorityGroupBox.ResumeLayout(false);
             priorityGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)taskDataGridView).EndInit();
+            contextMenuStrip1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -137,5 +162,8 @@ namespace PC2A1ControlLibrary
         private DataGridView taskDataGridView;
         private DataGridViewCheckBoxColumn DoneColumn;
         private DataGridViewTextBoxColumn TaskColumn;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem checkAllToolStripMenuItem;
+        private ToolStripMenuItem uncheckAllToolStripMenuItem;
     }
 }

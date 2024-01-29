@@ -9,7 +9,6 @@ namespace PC2A1ControlLibrary
     public partial class TaskAndPriorityUserControl : UserControl
     {
         public event EventHandler TaskOrPriorityChanged;
-        
 
 
         public TaskAndPriorityUserControl()
@@ -20,10 +19,7 @@ namespace PC2A1ControlLibrary
 
         private void onTaskOrPriorityChange()
         {
-            if (this.TaskOrPriorityChanged != null)
-            {
-                this.TaskOrPriorityChanged(this, EventArgs.Empty);
-            }
+            this.TaskOrPriorityChanged?.Invoke(this, EventArgs.Empty);
         }
 
         private void onRadioButtonChanged(object? sender, EventArgs e)
@@ -36,19 +32,35 @@ namespace PC2A1ControlLibrary
             this.onTaskOrPriorityChange();
         }
 
-        private void mediumRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void onContextMenuCheckAll(object? sender, EventArgs e)
         {
+            taskDataGridView.EndEdit();
 
+            for (int i = 0; i < taskDataGridView.Rows.Count - 1; i++)
+            {
+                bool isChecked = Convert.ToBoolean(taskDataGridView.Rows[i].Cells["DoneColumn"].Value);
+                if (!isChecked)
+                {
+                    taskDataGridView.Rows[i].Cells["DoneColumn"].Value = true;
+                }
+            }
+            this.onTaskOrPriorityChange();
         }
 
-        private void lowRadioButton_CheckedChanged(object sender, EventArgs e)
+
+        private void onContextMenuUncheckAll(object? sender, EventArgs e)
         {
+            taskDataGridView.EndEdit();
 
-        }
-
-        private void highRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-
+            for (int i = 0; i < taskDataGridView.Rows.Count - 1; i++)
+            {
+                bool isChecked = Convert.ToBoolean(taskDataGridView.Rows[i].Cells["DoneColumn"].Value);
+                if (isChecked)
+                {
+                    taskDataGridView.Rows[i].Cells["DoneColumn"].Value = false;
+                }
+            }
+            this.onTaskOrPriorityChange();
         }
     }
 }
